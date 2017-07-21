@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="alert alert-warning" role="alert" *ngIf="errorMessage">
+    <strong>Error!</strong> {{errorMessage}}
+  </div>
+  <div class="row">
+    <div class="col-lg-2">
+      <button class="btn btn-success" routerLink="/add-user">Add+</button>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-lg-6">
+      <ul class="list-group">
+        <li class="list-group-item justify-content-between" *ngFor="let user of users" (click)="onSelect(user)" [class.active]="user===selectedUser">
+          <img class="card-img-top img-circle" style="max-width: 5%; height: auto;" src={{user.photo}}>
+          <strong>{{user.lastname}} {{user.firstname}}</strong>
+          <span class="badge badge-default badge-pill">{{user.id}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <app-user-detail [user]="selectedUser"></app-user-detail>
+    </div>
+  </div>
+</div>

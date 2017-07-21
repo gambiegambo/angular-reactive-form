@@ -1,0 +1,23 @@
+<h2>Details!</h2>
+<div *ngIf="user; else emptyUserTemplate">
+  <div class="row">
+    <div class="col-lg-6">
+      <label>Firstname: </label>
+      <input [(ngModel)]="user.firstname" placeholder="firstname" />
+    </div>
+    <div class="col-lg-6">
+      <label>Lastname: </label>
+      <input [(ngModel)]="user.lastname" placeholder="lastname" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <button type="button" class="btn btn-success" (click)="saveUser()">Save</button>
+    </div>
+  </div>
+</div>
+<ng-template #emptyUserTemplate>
+  <div class="alert alert-warning" role="alert">
+    <strong>No User Selected!!</strong>
+  </div>
+</ng-template>
