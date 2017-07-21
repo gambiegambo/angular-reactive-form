@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Gambo",
+      "lastname": "Gambie",
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"
+    },
+    {
+      "id": 2,
+      "firstname": "Lucille",
+      "lastname": "Bluth",
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+    },
+    {
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg",
+      "firstname": "Test",
+      "lastname": "Add",
+      "id": 1499235786821
+    },
+    {
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg",
+      "firstname": "Kaitoon",
+      "lastname": "Tonhom",
+      "id": 1499239045009
+    },
+    {
+      "photo": "https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg",
+      "firstname": "gibi",
+      "lastname": "dev",
+      "id": 1499845459163
+    }
+  ],
+  "login": [
+	{
+		"id": 1,
+		"username": "username",
+		"password": "password",
+		"token": "xxx1"
+	}
+  ]
+}
